@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora POA - A cidade como roteiro turístico</title>
+  <meta name="description"
+    content="Aplicativo com foco em acessibilidade e curadoria local para explorar os melhores roteiros de Porto Alegre.">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header-full">
+
+    <div class="banner-topo">
+      <img src="assets/img/orla-do-guaiba.jpeg"
+        alt="Vista aérea da Orla do Guaíba e Usina do Gasômetro em Porto Alegre ao pôr do sol."
+        class="img-fundo-banner">
+
+      <div class="container banner-conteudo">
+        <img src="assets/img/sem fundo.svg" alt="Logotipo Explora POA" class="logo-topo-esquerda">
+        <h1 class="titulo-banner">A cidade como roteiro turístico</h1>
+      </div>
+    </div>
+
+    <nav class="nav-inferior">
+      <div class="container">
+        <ul>
+          <li><a href="#sobre">Sobre o App</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main class="fundo-gradiente-main">
+
+    <section id="sobre" class="sobre-section">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-texto">
+            <h2>Sobre o Explora POA</h2>
+            <p>O Explora POA nasceu da paixão pela nossa cidade e do desejo de tornar Porto Alegre acessível,
+              encantadora e acolhedora para todos. O nosso aplicativo é mais do que um mapa; é o seu guia de bolso
+              personalizado, unindo tecnologia de ponta, curadoria local feita por quem mora aqui e foco total em
+              acessibilidade (física e cognitiva).</p>
+          </div>
+
+          <div class="mvv-cards">
+            <div class="mvv-card">
+              <h3>Missão</h3>
+              <p>Democratizar o turismo em Porto Alegre, oferecendo roteiros autênticos que respeitem a individualidade
+                e as necessidades de cada pessoa.</p>
+            </div>
+            <div class="mvv-card">
+              <h3>Visão</h3>
+              <p>Ser a principal plataforma de turismo acessível e personalizado do Sul do Brasil até 2028.</p>
+            </div>
+            <div class="mvv-card">
+              <h3>Valores</h3>
+              <p>Inclusão, Autenticidade, Inovação, Empatia e muito amor por Porto Alegre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porto-alegre" class="poa-section">
+      <div class="container">
+        <div class="poa-conteudo">
+          <h2>Descubra Porto Alegre</h2>
+          <p>Uma capital vibrante, cheia de contrastes e histórias. Do tradicional churrasco e chimarrão nas praças aos
+            cafés e polos de inovação modernos. Do pôr do sol inesquecível na Orla do Guaíba à efervescência cultural da
+            Cidade Baixa e dos nossos museus. Com o Explora POA, você vivencia a cidade não apenas como um turista, mas
+            como um verdadeiro morador (um "local"). Deixe o Beto te guiar pelos melhores cantos!</p>
+        </div>
+
+        <div class="carrossel-container">
+          <div class="carrossel-track" aria-label="Galeria de fotos de Porto Alegre" tabindex="0">
+            <img src="img/poa1.jpg" alt="Pôr do sol na Orla do Guaíba" class="carrossel-img">
+            <img src="img/poa2.jpg" alt="Fachada histórica do Mercado Público" class="carrossel-img">
+            <img src="img/poa3.jpg" alt="Casa de Cultura Mario Quintana" class="carrossel-img">
+            <img src="img/poa4.jpg" alt="Pessoas tomando chimarrão no Parque Redenção" class="carrossel-img">
+            <img src="img/poa5.jpg" alt="Vista aérea da cidade de Porto Alegre" class="carrossel-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="diferenciais" class="diferenciais-section">
+      <div class="container">
+        <h2>Por que usar o Explora POA?</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>100% Personalizado</h3>
+            <p>Diga o que gosta (gastronomia, música, orçamento) e nós montamos o roteiro perfeito.</p>
+          </article>
+          <article class="card">
+            <h3>Acessibilidade em Foco</h3>
+            <p>Locais validados para garantir autonomia e conforto para todos os perfis de utilizadores.</p>
+          </article>
+          <article class="card">
+            <h3>Guia Virtual Local</h3>
+            <p>O Beto acompanha-o com dicas autênticas que só quem mora em Porto Alegre conhece.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato-section">
+      <div class="container contato-grid">
+
+        <div class="contato-form-area">
+          <h2>Fale com a Gente</h2>
+          <p class="subtitulo-contato">Dúvidas ou sugestões? Envie uma mensagem!</p>
+
+          <form class="formulario-contato" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+            <div class="grupo-form">
+              <label for="nome">Seu Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Como gosta de ser chamado?" required>
+            </div>
+            <div class="grupo-form">
+              <label for="email">Seu E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="grupo-form">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primario btn-form">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div class="contato-info-area">
+          <h2>Seja um Parceiro</h2>
+          <p class="subtitulo-contato">Faça parte do roteiro de quem visita a cidade.</p>
+
+          <div class="info-card">
+            <h3>Cadastre seu Estabelecimento</h3>
+            <p>Tem um restaurante, museu ou atração turística? Queremos avaliar a acessibilidade do seu espaço e
+              incluí-lo em nossos roteiros. Fale conosco para saber como!</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Nossa Base</h3>
+            <p>Porto Alegre, RS<br>Atuando em toda a Região Metropolitana</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape-site">
+    <div class="container">
+
+      <div class="rodape-conteudo">
+        <div class="rodape-info">
+          <p>&copy; 2026 Explora POA.<br>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="redes-sociais">
+          <p class="titulo-redes">Redes Sociais e Contato</p>
+          <div class="links-redes">
+
+            <a href="https://instagram.com/explora_poa" target="_blank" rel="noopener noreferrer"
+              aria-label="Visite o nosso Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+
+            <a href="https://wa.me/5551999291729" target="_blank" rel="noopener noreferrer"
+              aria-label="Fale conosco no WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M11.999 0C5.373 0 0 5.373 0 12c0 2.115.553 4.108 1.524 5.832L.15 23.85l6.195-1.353A11.94 11.94 0 0011.999 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm5.838 17.151c-.247.697-1.42 1.322-1.957 1.393-.503.067-1.157.174-3.327-.723-2.618-1.082-4.29-3.743-4.42-3.916-.13-.174-1.055-1.408-1.055-2.684 0-1.277.663-1.905.898-2.152.235-.248.513-.31.684-.31.171 0 .342 0 .493.007.162.008.38-.063.593.45.223.535.705 1.724.77 1.854.064.13.107.28.02.454-.085.174-.13.28-.256.434-.13.15-.268.326-.385.454-.13.14-.268.293-.118.553.15.26.666 1.106 1.433 1.794.992.89 1.82 1.168 2.08 1.293.26.126.41.107.564-.063.15-.174.646-.75.82-1.01.173-.26.347-.217.585-.126.237.09 1.503.71 1.762.839.26.13.433.193.497.303.064.11.064.643-.183 1.34z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="rodape-creditos">
+        <p>Desenvolvido por <a href="COLE_SEU_LINK_AQUI" target="_blank" rel="noopener noreferrer"
+            class="link-dev">Andréa Leite</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
